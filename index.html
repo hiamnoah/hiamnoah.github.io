@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">   <!-- English Language-->
+<head>
+
+	  <title>HyperX Gaming - Welcome to HyperX!</title>
+    <link href="https://media.kingston.com/hyperx/logos/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <meta charset="utf-8">
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+ /* Default hide the video on all devices 
+#video{display:none}*/
+/* Default display the image to replace the video on all devices */
+#videosubstitute{display:block;width:auto;height:100%;}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+#videowrapper{  
+    position: relative;
+    overflow: hidden;
+} 
+
+#fullScreenDiv{
+    min-height: 100%; 
+    height: 90vh;
+    width: 100vw;
+    padding:0!important;
+    margin: 0!important;
+    background-color: gray;
+    position: relative;
+}
+
+#video{    
+width: 100vw; 
+height: auto;
+margin: auto;
+display: block;
+}
+@media (min-aspect-ratio: 16/9) {
+  #video{
+    width: 100vw; 
+    height:auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #video {
+    height: 100vh; 
+    width:auto;
+    margin-left: 0vw;
+    transform: translate(-50%);
+  }
+}
+
+
+.styling *{ margin:0.2em; text-align:center;color:#ffffff;}
+.styling h1{font-size: 3em; text-shadow: 2px 2px 2px #000000;}
+.styling h2{font-size: 1.5em;}
+.styling h3{font-size: 1.2em;}
+.videoClick a{padding:0.2em 0.5em;border-radius:0.5em;color:white;background-color:rgba(241, 241, 241, 0.45);font-size: 1.7em;cursor:pointer;cursor:hand}
+.blur{filter: blur(0.5rem);}
+
+
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+  .serif {
+  font-family: "Times New Roman", Times, serif;
+}
+.container .button {
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: lightgray;
+  color: black;
+  font-size: 13px;
+  padding: 12px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .button:hover {
+  background-color: #df2227;
+  color: white;
+}
+</style>
+
+</head>
+
+<body style="height:1600px; background-color: black">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="index.html">
+    <img src="images\logo1.jpg" alt="logo" style="width:100px;">
+  </a>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html" style="margin-right: 10px; color:#df2227"><b> Home </b></a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="margin-right: 10px;  color:white">Products</a>
+      <div style="background-color: #353a40" class="dropdown-menu">
+        <a style="color: white" class="dropdown-item" href="gamingheadsets.html">Gaming Headsets</a>
+        <a style="color: white" class="dropdown-item" href="microphones.html">Microphones</a>
+        <a style="color: white" class="dropdown-item" href="memory.html">Memory</a>
+      </div>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="support.html" style="margin-right: 10px; color:white">Support</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="About us.html" style="margin-right: 10px;  color:white">About us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="blog.html" style="margin-right: 10px;  color:white">Blog</a>
+    </li>
+  </ul>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+</nav>
+</nav>
+
+<!-- 
+https://www.hyperxgaming.com/shared/videos/hx-herovideo-wag30-420.mp4 -->
+<section>
+  <div id="videowrapper">
+    <div id="fullScreenDiv" style="background-color: black" >
+      <video id="video" role="presentation" preload="auto" playsinline crossorigin="anonymous" loop muted autoplay>
+        <source src="https://www.hyperxgaming.com/shared/videos/hx-herovideo-wag30-1920.mp4" type="video/webm">
+      </video>
+    </div>
+  </div>
+	<div class="container" style="padding-bottom: 20px">
+    <br>
+    <br>
+    <br>
+		<h1 class="text-center pt-5" style="color: #c4c4c4"> <b class="serif"> ABOUT US </b> </h1>
+    <br>
+		<hr style="width: 1100px; height:2px;border-width:0;color:gray;background-color:gray">
+    <br>
+    <br>
+		<div class="row">
+			<div class="col">
+				<img src="images\logo.jpg" class="img-fluid" width="500" height="800">
+			</div>
+			<div class="col">
+				<h1 style="color: #c4c4c4">Our Story </h1>
+        <br>
+				<p style="text-align: justify; color: #c4c4c4">Every day, billions of people wake up, eat and fire up a game as part of their usual routine. Whether you're a pro getting in a scrim in preparation for a major, a streamer settling in to broadcast to legions of fans, someone jumping online with friends or a commuter killing time on your train ride, we all game.
+				#HyperXFamily ...
+				</p>
+        <br>
+        <a href="About us.html" class="button"><b>Read more</b></a>
+
+
+
+				
+			</div>
+		</div>
+</section>
+
+<style>
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 1px 1px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+</style>
+
+<div class="footer" style="z-index: 15; background-color: #353a40" >
+  <br>
+  <!-- Add font awesome icons -->
+  <a href="https://www.facebook.com/tun.thoi" class="fa fa-facebook"></a>
+
+  <a href="https://mail.google.com/mail/u/5/#inbox" class="fa fa-google"></a>
+
+  <a href="https://www.instagram.com/tphuchoan/" class="fa fa-instagram"></a>
+
+  
+  <p class="pt-1"> @Copyright 2020 </p>
+
+</div>
+
+
+
+</body>
+
+</html>
